@@ -51,8 +51,9 @@ class UtilTools(object):
         elif file_extension == '.zip':
             print('zip zipped')
             with ZipFile(self.BUCKET+os.path.basename(url)) as zp:
+                name = zp.namelist()[0]
 
-                self._write_data(filename, zp.read('products.xml'))
+                self._write_data(filename, zp.read(name))
                 return self.BUCKET+os.path.basename(url)
         else:
             return self.BUCKET + os.path.basename(url)

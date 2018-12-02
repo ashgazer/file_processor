@@ -153,9 +153,10 @@ class ProductFeeds(UtilTools):
         """
         file_list = []
         for url in self.files:
+            print(url)
             filename = self.download_file(url)
-            file_list.append(filename)
-            # file_list.append(self.BUCKET + os.path.basename(url))
+            #file_list.append(filename)
+            file_list.append(self.BUCKET + os.path.basename(url))
 
         for file in file_list:
             filename , file_extension = os.path.splitext(file)
