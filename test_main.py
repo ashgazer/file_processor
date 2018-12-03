@@ -31,22 +31,6 @@ def test_fix_stock(data, result):
     assert result == ProductFeeds.fix_stock(data)
 
 
-@pytest.mark.parametrize('data,result', [
-
-    (
-  , [{
-    "id": "c5bd1c1bc2da4f8d",
-    "name": "amnesic",
-    "brand": "tetriodide",
-    "retailer": "bagonet",
-    "price": 9.19,
-    "in_stock": "y"
-  }])
-
-])
-
-def test_json_reader(data,result):
-    assert result == ProductFeeds.json_reader(data)
 
 
 # from io import StringIO
