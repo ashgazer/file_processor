@@ -25,6 +25,8 @@ def test_fix_price(data, result):
 
     ('y', '1'),
     ('n', '0'),
+    ('f', '0'),
+    ('t', '1'),
 
 ])
 def test_fix_stock(data, result):
