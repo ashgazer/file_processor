@@ -1,7 +1,7 @@
 # Product Feed
 
 The following project uses ProductFeed class as to download and merge three different
-of the product feed. The ProductFeed it self inherits from the base clase UtilTools.
+streams of the product feed. The ProductFeed it self inherits from the base clase UtilTools.
 A Generic Class that can download CSV, XML or Json in gz or zip formats.
  
 
