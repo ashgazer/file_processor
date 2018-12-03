@@ -23,7 +23,7 @@ pip install requirements.pip
 
 
 Instantiate the object using the ProductsFeeds() object. Then use the run method to start
-the process to create the product feed 
+the process to create the product feed the result is a csv. 
 
 ```
 data = ProductFeeds()
